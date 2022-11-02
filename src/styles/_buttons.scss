@@ -1,0 +1,73 @@
+@import "./variables";
+
+@mixin black-button {
+  color: $white;
+  background: $black_100;
+  border-radius: $ls;
+  font-size: $md;
+  padding: $customMd $xl;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white !important;
+    background: $black_100 !important;
+  }
+  &:disabled {
+    color: $white;
+    background: $black_100;
+    opacity: 0.3;
+  }
+}
+
+@mixin white-button {
+  background: $white;
+  border-radius: $ls;
+  padding: $md $lg;
+  font-weight: 500;
+  border: none;
+  &:hover {
+    background: $white;
+  }
+}
+
+@mixin gray-button {
+  width: 100%;
+  height: $xl5;
+  background: $white_600;
+  border-radius: 0px 0px $customMd2 $customMd2;
+  font-size: $md;
+  color: $black;
+  border: none;
+  font-weight: 500;
+  &:hover {
+    background: $white_600;
+  }
+}
+
+@mixin outline-button {
+  background-color: $white;
+  color: $black;
+  font-weight: 500;
+  border: 1px solid $black;
+  border-radius: $customMd2;
+  width: $xl5;
+  &:hover {
+    border: 1px solid $black;
+  }
+}
+
+@mixin outline-gray-button {
+  width: $xl5;
+  height: $xl5;
+  background: $white;
+  border: 1px solid $white_300;
+  border-radius: $customMd2;
+  margin-right: $ls;
+  &:hover {
+    background: $white !important;
+    border: 1px solid $white_300 !important;
+  }
+}

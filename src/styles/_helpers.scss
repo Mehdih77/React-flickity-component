@@ -1,0 +1,30 @@
+@mixin flexJustifyAlignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin flexSpaceBetweenAlignCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flexJustifyCenter {
+  display: flex;
+  justify-content: center;
+}
+@mixin flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}

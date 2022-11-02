@@ -1,0 +1,18 @@
+@import "styles/helpers";
+@import "styles/variables";
+
+.wrapper {
+  // maybe need check styles !?
+  @include flexJustifyAlignCenter();
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  span {
+    font-weight: 700;
+    margin-top: $mdLarger2;
+    font-size: $mdLarger2;
+    color: $gray_100;
+  }
+}

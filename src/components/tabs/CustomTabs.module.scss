@@ -1,0 +1,23 @@
+@import "styles/variables";
+
+.tabList {
+  display: flex;
+  max-width: max-content;
+  padding: 2px;
+  margin: 0 0 $ls;
+  background: $white_300;
+  border-radius: $ls;
+  white-space: nowrap;
+}
+.tab {
+  padding: $sm $mdLarger2;
+  border-radius: $ls;
+  color: $gray_100;
+  font-size: $md;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-left: 4px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "styles/buttons";
+@import "styles/variables";
+@import "styles/helpers";
+
+.wrapper {
+  @include flexAlignCenter();
+  .container {
+    width: 100px;
+    position: relative;
+  }
+  .previewImage {
+    @include flexJustifyAlignCenter();
+    width: $xl6;
+    height: $xl6;
+    border-radius: $customMd2;
+    background-color: $white_300;
+    object-fit: cover;
+  }
+}
+.dropZone {
+  @include flexJustifyAlignCenter();
+  cursor: pointer;
+  position: absolute;
+  bottom: -$xs;
+  right: -$xs;
+  background: $black_400;
+  border-radius: $ls;
+  width: $lg3;
+  height: $lg3;
+}

@@ -1,0 +1,110 @@
+@import "styles/buttons";
+@import "styles/variables";
+@import "styles/helpers";
+// card
+.active {
+  .special {
+    @include flexJustifyAlignCenter();
+    position: absolute;
+    color: $white;
+    font-weight: 700;
+    border-radius: $mdLarger2 $mdLarger2 0 0;
+    z-index: -1;
+    top: 0px;
+    width: 93.5%;
+    height: $xl5;
+    background-color: #ff6768;
+    span {
+      margin-top: -$customMd;
+    }
+    &.gray {
+      background-color: $dark_gray;
+    }
+  }
+  .card {
+    margin-top: $xl3;
+    height: 673px;
+  }
+  .title {
+    padding: $xl3 $mdLarger2 $lg;
+  }
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 713px;
+  background: $white;
+  border-radius: $mdLarger2;
+  margin-left: $mdLarger2;
+}
+.title {
+  text-align: center;
+  padding: $xl $mdLarger2 $xl2;
+  color: $black;
+  h3 {
+    font-size: $md;
+    font-weight: 600;
+  }
+  p {
+    & > span:first-child {
+      font-weight: 600;
+      font-size: $xl4;
+    }
+
+    & > span:last-child {
+      display: inline-block;
+      margin-right: $sm;
+      font-weight: 300;
+      font-size: $customMd;
+      width: $xl;
+    }
+  }
+}
+.list {
+  margin-top: $customMd2;
+  padding: 0 $mdLarger2;
+  overflow: scroll;
+  max-height: 420px;
+  li {
+    font-weight: 400;
+    font-size: $sm;
+    line-height: $mdLarger2;
+    margin-bottom: $mdLarger2;
+    svg {
+      margin-left: 4px;
+    }
+  }
+  &::-webkit-scrollbar{
+    width: 0;
+  }
+}
+.buttonWrapper {
+  position: absolute;
+  width: calc(100% - $mdLarger2);
+  bottom: $mdLarger2;
+  right: $mdLarger2;
+  .edit {
+    @include black-button();
+    padding: 0;
+    width: 186px;
+    margin-left: $mdLarger2;
+    svg {
+      margin-left: 10px;
+    }
+  }
+  .delete {
+    @include outline-button();
+  }
+  .edit,
+  .delete {
+    height: $xl5;
+  }
+}
+
+// modals
+.editModal {
+  max-width: 350px;
+}
+.deleteModal {
+  max-width: 516px;
+}

@@ -1,0 +1,53 @@
+@import "styles/buttons";
+@import "styles/helpers";
+@import "styles/variables";
+
+.header {
+  padding: $customMd2 0;
+  margin: 0 $md 0 $mdLarger2;
+  border-color: $white_400;
+
+  div {
+    font-weight: 800;
+    font-size: $customMd;
+    color: $black;
+  }
+}
+.body {
+  padding: $mdLarger2;
+
+  p {
+    font-weight: 400;
+    line-height: $lg2;
+    text-align: center;
+    color: $black;
+    padding: 0 $mdLarger2 $mdLarger2;
+
+    span {
+      color: $red;
+    }
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+
+  & > button:first-child {
+    margin-left: $mdLarger2;
+    width: 130px;
+  }
+
+  & > button:last-child {
+    width: 106px;
+  }
+}
+.btn {
+  @include black-button();
+  padding: $customMd;
+
+  &.outline {
+    @include outline-button();
+    border-radius: $ls;
+  }
+}

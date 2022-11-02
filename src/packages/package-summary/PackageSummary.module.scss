@@ -1,0 +1,56 @@
+@import "styles/variables";
+@import "styles/helpers";
+
+// All
+.wrapper {
+  display: flex;
+  width: calc(100% - 60px);
+  padding: $xl3;
+  gap: $mdLarger2;
+}
+.box {
+  flex: 0 0 25%;
+  max-width: 25%;
+  height: 171px;
+  border-radius: $customMd2;
+}
+// Card
+.card {
+  @include flexAlignCenter();
+  justify-content: space-around;
+  padding: $mdLarger2;
+  background: $white;
+  .right {
+    color: $black;
+    h6 {
+      font-weight: 800;
+      font-size: $md;
+      margin: $mdLarger2 0 $ls;
+    }
+    span {
+      font-weight: 500;
+      font-size: $ls;
+    }
+  }
+  .left {
+    span {
+      font-weight: 800;
+      font-size: $xl2;
+      color: $black;
+    }
+  }
+}
+// payment
+.payment {
+  @include flexJustifyAlignCenter();
+  flex-direction: column;
+  font-weight: 700;
+  border: 2px dashed $gray;
+  background: $white_300;
+  font-size: $md;
+  color: $gray_400;
+  cursor: pointer;
+  svg {
+    margin-bottom: $sm;
+  }
+}

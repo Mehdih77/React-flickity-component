@@ -1,0 +1,13 @@
+@import "styles/variables";
+.close {
+  position: absolute;
+  background: $black_100;
+  border-radius: $mdLarger2;
+  width: 105px;
+  height: 60px;
+  right: -60px;
+  top: 0;
+  padding: $customMd2;
+  z-index: -1;
+  cursor: pointer;
+}

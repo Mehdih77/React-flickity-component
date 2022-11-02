@@ -1,0 +1,49 @@
+@import "styles/buttons";
+@import "styles/helpers";
+@import "styles/variables";
+
+.dropdown {
+  width: 100%;
+  border: 1px solid $gray;
+  border-radius: $ls;
+  height: $xl5;
+}
+.toggle {
+  @include flexAlignCenter();
+  @include flexSpaceBetween();
+  height: 100%;
+  width: 100%;
+  font-size: $customMd;
+  font-weight: 500;
+  text-align: right;
+  color: $black !important;
+  background-color: inherit !important;
+  border: none !important;
+  svg {
+    width: $mdLarger2;
+    margin-right: auto;
+  }
+  &.open svg {
+    transform: rotate(180deg);
+  }
+  .gray {
+    color: $gray;
+  }
+}
+.menu {
+  border: none;
+  border-radius: 0px 0px $ls $ls;
+  box-shadow: 0px $xs $md rgba(0, 0, 0, 0.14);
+  width: 100%;
+  padding: 4px;
+  transform: translate(0px, $xl5) !important;
+  div {
+    font-size: $customMd;
+    color: $black !important;
+    font-weight: 400;
+    text-align: right;
+    background-color: inherit !important;
+    cursor: pointer;
+    padding: $ls $customMd2;
+  }
+}

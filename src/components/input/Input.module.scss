@@ -1,0 +1,45 @@
+@import "styles/variables";
+
+.wrapper {
+  position: relative;
+  .icon {
+    position: absolute;
+    left: $md;
+    top: $md;
+    cursor: pointer;
+    user-select: none;
+  }
+  .label {
+    position: absolute;
+    right: $ls;
+    top: $customMd;
+    font-size: $customMd;
+    color: $gray;
+    padding: 3px $xs;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+    &.focusLabel {
+      top: -$customMd;
+      font-size: $ls;
+      color: $gray_700;
+      background-color: $white;
+      border-radius: 50%;
+    }
+  }
+}
+.input {
+  width: 100%;
+  height: $xl5;
+  background-color: $white;
+  color: $black;
+  padding: $md;
+  margin-bottom: $mdLarger2;
+  border: 1px solid $gray;
+  border-radius: $ls;
+  &::placeholder {
+    color: $gray;
+    font-size: $customMd;
+    font-weight: 500;
+  }
+}

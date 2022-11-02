@@ -1,0 +1,43 @@
+@import "styles/helpers";
+@import "styles/variables";
+
+.switchWrapper {
+  @include flexAlignCenter();
+  cursor: pointer;
+  .switch {
+    margin-left: $ls;
+  }
+  label {
+    font-size: $customMd;
+    color: $black;
+    font-weight: 400;
+    text-align: right;
+  }
+}
+.switch {
+  position: relative;
+  width: 42px;
+  height: 22px;
+  border-radius: 7px;
+  .switchDot {
+    position: absolute;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    background: $white;
+    border-radius: 5px;
+    transition: 0.25s ease-in-out left;
+  }
+  &.off {
+    background: $white_500;
+    .switchDot {
+      left: 2px;
+    }
+  }
+  &.on {
+    background: $red_light;
+    .switchDot {
+      left: calc(100% - 20px);
+    }
+  }
+}

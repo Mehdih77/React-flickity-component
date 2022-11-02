@@ -1,0 +1,156 @@
+@import "styles/_variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  direction: rtl;
+}
+
+body {
+  // font-family: IRANYekan;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+input.middle:focus {
+  outline-width: 0;
+}
+
+a,
+a:hover,
+a:active,
+a:focus,
+input:hover,
+input:active,
+input:focus,
+button:hover,
+button:visited,
+button:active,
+button:focus,
+.form-control:focus {
+  outline: none !important;
+  color: inherit;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/* --------------------------------- */
+/*        wrapper - content          */
+/* --------------------------------- */
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  width: 100%;
+}
+#content {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8faff;
+}
+/* --------------------------------- */
+/*           rc-scrollbars           */
+/* --------------------------------- */
+.rc-scrollbars-view {
+  margin-right: 0 !important;
+}
+.rc-scrollbars-view::-webkit-scrollbar {
+  width: 0px;
+}
+/* -------------- */
+/*     Table     */
+/* ------------- */
+table {
+  thead {
+    th {
+      padding: $sm !important;
+      border-bottom: 0px;
+      &:first-child {
+        border-top-right-radius: $customMd2;
+      }
+      &:last-child {
+        border-top-left-radius: $customMd2;
+      }
+    }
+  }
+  tbody {
+    tr {
+      border: 1px solid $white_300;
+      border-inline-width: 2px;
+      border-inline-color: transparent;
+      td {
+        border: 1px solid $white_300;
+        vertical-align: middle;
+        font-weight: 700;
+        color: $gray_200;
+        font-size: $md;
+      }
+    }
+  }
+}
+/* ------------- */
+/*  react-tabs   */
+/* ------------- */
+.react-tabs__tab--selected {
+  background-color: #fff !important;
+  color: #202020 !important;
+}
+/* ----------- */
+/*  flickity   */
+/* ----------- */
+.flickity-button {
+  display: none;
+}
+/* -------------- */
+/*      MODAL     */
+/* -------------- */
+.modal-content {
+  border-radius: 20px;
+  border: none;
+}
+.modal-backdrop {
+  // background-color: #202020 !important;
+  background: #0f1c29 !important;
+}
+.modal-backdrop.show {
+  opacity: 0.5 !important;
+}
+/* -------------- */
+/*    dropdown    */
+/* -------------- */
+.dropdown-toggle::after {
+  display: none;
+}

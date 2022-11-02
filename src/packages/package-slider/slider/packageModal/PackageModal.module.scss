@@ -1,0 +1,54 @@
+@import "styles/buttons";
+@import "styles/variables";
+@import "styles/helpers";
+
+.wrapper {
+  padding: $mdLarger2;
+}
+.headerFields {
+  & > div {
+    margin-bottom: $mdLarger2;
+    input {
+      height: 100%;
+    }
+  }
+}
+.switchContainer {
+  display: flex;
+  margin: $xl $ls $xl 0;
+
+  & > div {
+    margin-left: $mdLarger2;
+  }
+}
+.bodyFields {
+  min-height: 362px;
+  margin-top: $md;
+
+  .addField {
+    @include flexJustifyAlignCenter();
+    height: $xl5;
+    font-size: $md;
+    font-weight: 500;
+    color: $gray_400;
+    background: $white_300;
+    border: 1px dashed $gray;
+    border-radius: $ls;
+    cursor: pointer;
+    svg {
+      width: $lg;
+      margin-left: $ls;
+    }
+  }
+  & > div:not(.addField) {
+    margin-bottom: $mdLarger2;
+  }
+}
+.footerFields {
+  margin-top: $lg;
+  button {
+    @include black-button();
+    height: $xl5;
+    width: 100%;
+  }
+}
